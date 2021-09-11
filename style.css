@@ -28,7 +28,9 @@ html {
   flex-direction: row;
 }
 body {
-  background-size: 500% 500%;
+  background: linear-gradient(-45deg, #a34326, #42803a, #157699, #0e8f71);
+  background-size: 400% 400%;
+
   animation: gradient 10s ease infinite;
   height: 100vh;
 }
@@ -88,7 +90,7 @@ input[type="button"]:hover {
 input[type="button"]:active {
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px,
-    0 0 20px rgba(20, 20, 20, 0.1) inset;
+    0 10px 20px rgba(20, 20, 20, 0.1) inset;
 }
 label,
 textarea {
@@ -125,6 +127,7 @@ label {
   border: 1px solid #ccc;
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  background-color: rgb(255, 255, 255);
 }
 .taskBody {
   height: 100%;
