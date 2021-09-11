@@ -72,7 +72,7 @@ input {
   outline: none;
   text-align: center;
   transition: letter-spacing 0.5s, width 0.5s;
-  background: rgb(236, 236, 241);
+  background: rgb(244, 244, 253);
 }
 input[type="button"] {
   position: relative;
@@ -104,7 +104,7 @@ textarea {
   border: none;
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px;
   outline: none;
-  background: rgb(236, 236, 241);
+  background: rgb(244, 244, 253);
 }
 label {
   display: block;
@@ -139,7 +139,7 @@ label {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   overflow-y: auto;
-  background: rgb(236, 236, 241);
+  background: rgb(244, 244, 253);
 }
 .taskBody::-webkit-scrollbar {
   display: none;
@@ -164,8 +164,7 @@ h2 {
   border: 1px solid #ccc;
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-  background: rgb(236, 236, 241);
-
+  background: rgb(244, 244, 253);
   overflow-y: auto;
 }
 .taskList::-webkit-scrollbar {
@@ -176,7 +175,7 @@ h2 {
   border-radius: 10px;
 }
 .taskList::-webkit-scrollbar-thumb {
-  background: rgb(237, 237, 247);
+  background: rgb(244, 244, 253);
 
   border-radius: 20px;
   border: 1px solid rgb(155, 155, 155);
