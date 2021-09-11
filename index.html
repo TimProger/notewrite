@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>REMBER</title>
+</head>
+<body>
+    <script> </script>
+    <form action="POST" class="createTask">
+        <label for="story">Write title for your task:</label>
+        <input required placeholder=" Task name" type="text" class="title">
+        <label for="story">Write something, that you need to remember:</label>
+        <textarea required id="story" name="story"  rows="5" cols="33" placeholder="Example: do my homework"></textarea>
+        <input type="button" value="Create task" class="submit">
+    </form>
+    <div class="tasks">
+        <ul class="taskList">
+
+        </ul>
+        <div class="taskBody unselectable">
+            <h2></h2>
+            <p class="p">There's nothing...</p>
+        </div>
+    </div>
+
+
+    <script src="newscript.js"></script>
+</body>
+</html>
