@@ -127,6 +127,9 @@ label {
 .taskBody {
   height: 100%;
   width: 65%;
+  max-width: 65%;
+  min-width: 65%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +137,6 @@ label {
   border: 1px solid #ccc;
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-
   text-align: center;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -145,7 +147,11 @@ label {
   display: none;
 }
 .taskBody p {
+  margin: 0;
   width: 70%;
+  max-width: 65%;
+  min-width: 65%;
+
   height: 70%;
   word-wrap: break-word;
 }
