@@ -49,8 +49,6 @@ const createTask = (evt) => {
       evt.stopPropagation ? evt.stopPropagation() : (evt.cancelBubble = true);
     });
     taskEL.appendChild(del);
-  } else {
-    console.log("Error");
   }
 };
 let submit = document.querySelector(".submit");
@@ -88,7 +86,6 @@ if (localStorage.getItem("tasklist")) {
       container.classList.add("unselectable");
       let indexOfTask = tasklist.indexOf(taskEL);
       tasklist.splice(indexOfTask, 1);
-      console.log(listEL.childNodes.length);
       saveLocal();
       evt.stopPropagation ? evt.stopPropagation() : (evt.cancelBubble = true);
     });
