@@ -58,8 +58,8 @@ submit.addEventListener("click", createTask);
 
 const myInput = document.querySelector('input[type="text"]');
 myInput.oninput = function () {
-  if (this.value.length > 12) {
-    this.value = this.value.slice(0, 12);
+  if (this.value.length > 14) {
+    this.value = this.value.slice(0, 14);
   }
 };
 if (localStorage.getItem("tasklist")) {
