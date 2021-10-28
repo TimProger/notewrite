@@ -93,3 +93,21 @@ if (localStorage.getItem("tasklist")) {
     saveLocal();
   }
 }
+
+
+// const svgcont = document.querySelector('.svgcont')
+// const svgimg = document.querySelector('.svgimg')
+
+// svgimg.addEventListener('click', (e) => {
+//   listEL.style.display = 'flex'
+//   listEL.style.position = 'absolute'
+// })
+
+// window.onresize = function (evt) {
+//   if (document.querySelector('.svgcont') == true) {
+//     console.log('eee')
+//   } else {
+//     console.log('sssssss')
+
+//   }
+// };

@@ -4,7 +4,7 @@
   font-weight: 600;
   font-family: "Glory", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
 }
 ::placeholder {
   color: black;
@@ -20,30 +20,31 @@
 }
 body,
 html {
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  max-width: 99%;
+  min-width: 99%;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
 }
 body {
   background: linear-gradient(-45deg, #a34326, #42803a, #157699, #0e8f71);
-  background-size: 400% 400%;
-
+  background-size: 500% 500%;
   animation: gradient 10s ease infinite;
   height: 100vh;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 10% 40%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 40%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 10% 40%;
   }
 }
 
@@ -62,7 +63,7 @@ form {
 }
 input {
   height: 10%;
-  width: 35%;
+  width: 55%;
   line-height: 1.5;
   border-radius: 30px;
   border: none;
@@ -76,19 +77,18 @@ input {
 }
 input[type="button"] {
   position: relative;
-  top: 90px;
   width: 30%;
   transform: scale(1.5);
-}
-input[type="button"]:hover {
-  cursor: pointer;
-  letter-spacing: 2px;
-  width: 35%;
 }
 input[type="button"]:active {
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px,
     0 10px 20px rgba(20, 20, 20, 0.1) inset;
 }
+
+.svgcont{
+  display: none;
+}
+
 label,
 textarea {
   letter-spacing: 1px;
@@ -113,6 +113,8 @@ label {
 .tasks {
   width: 46%;
   height: 60%;
+  max-height: 60%;
+  max-width: 46%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -129,10 +131,9 @@ label {
   width: 65%;
   max-width: 65%;
   min-width: 65%;
-
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   border: 1px solid #ccc;
   box-shadow: rgba(27, 29, 31, 0.48) 6px 2px 16px 0px,
@@ -142,17 +143,19 @@ label {
   border-bottom-right-radius: 30px;
   overflow-y: auto;
   background: rgb(244, 244, 253);
+  margin: 0;
+
 }
 .taskBody::-webkit-scrollbar {
   display: none;
 }
 .taskBody p {
   margin: 0;
-  width: 70%;
+  width: 65%;
+  padding: 10px;
   max-width: 65%;
   min-width: 65%;
-
-  height: 70%;
+  height: 10%;
   word-wrap: break-word;
 }
 h2 {
@@ -190,10 +193,10 @@ h2 {
   margin: 0;
 }
 .task {
-  height: 12%;
-  min-height: 12%;
+  height: 10%;
+  min-height: 10%;
   word-wrap: break-word;
-  width: 85%;
+  width: 80%;
   border: 1px solid #ccc;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -203,7 +206,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1%;
+  margin: 1%;
   margin-top: 5%;
   cursor: pointer;
   overflow: hidden;
@@ -236,38 +239,209 @@ h2 {
   width: 90%;
 }
 
-@media screen and (max-width: 1200px) {
+
+@media (max-width: 1448px) {
+  * {
+    font-size: 15px;
+  }
   body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    height: 1000px;
+    height: 100vh;
+    font-size: 5px;
   }
   form {
-    width: 63%;
+    width: 80%;
     height: 40%;
+    padding: 10px;
+    margin: 0;
+    margin-top: 20px;
+
+  }
+  .tasks {
+    width: 80%;
+    height: 40%;
+    max-height: 40%;
+    min-height: 40%;
+    max-width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .taskList{
+    width: 40%;
+    display: flex;
+  }
+
+  .taskBody{
+    width: 60%;
+    max-width: 60%;
+    min-width: 60%;
+  }
+
+  .task{
+    width: 70%;
+    min-width: 50%;
+
   }
   .del {
     top: 0;
   }
+  input[type="text"] {
+    height: 50%;
+
+  }
+  input[type="button"] {
+    transition: none;
+    font-size: 12px;
+    top: 40px;
+    height: 40%;
+    width: 50%;
+  }
+  .taskList::-webkit-scrollbar {
+    width: 12px;
+  }
+  .taskList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  .taskList::-webkit-scrollbar-thumb {
+    background: rgb(244, 244, 253);
+  
+    border-radius: 20px;
+    border: 1px solid rgb(155, 155, 155);
+  }
+  textarea {
+    height: 80%;
+  }
+}
+
+
+
+
+
+
+
+/* ----------------------------------- */
+
+
+
+
+
+
+
+
+@media (max-width: 785px) {
+  * {
+    font-size: 12px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .svgimg{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .svgcont{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    top: -20px;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 5px;
+  }
+  form {
+    width: 80%;
+    height: 40%;
+    padding: 10px;
+
+
+  }
   .tasks {
-    width: 63%;
-    height: 55%;
-    margin-bottom: 5%;
+    width: 80%;
+    height: 40%;
+    padding: 10px;  
+
   }
-  .taskBody {
-    height: 90%;
+  .taskList::-webkit-scrollbar {
+    width: 12px;
   }
-  .taskList {
-    width: 30%;
-    height: 90%;
+  .taskList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
   }
-  .task {
-    height: 10%;
-    min-height: 10%;
+  .taskList::-webkit-scrollbar-thumb {
+    background: rgb(244, 244, 253);
+  
+    border-radius: 20px;
+    border: 1px solid rgb(155, 155, 155);
+  }
+  .taskList{
+    height: 24%;
+    width: 100%;
+    left: 56px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0;
+  }
+  .taskList *{
+    margin: 0;
+
+  }
+  .tasks{
+    flex-direction: column;
+    gap: 2px;
+  }
+  .taskBody{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 0px 0px 30px 30px ;
+  }
+
+  .task{
+    width: 100px;
+    height: 50%;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .del {
+    top: 0;
+    height: 10px;
+    width: 10px;
   }
   input[type="text"] {
-    height: 10%;
+    height: 30%;
+  }
+  input[type="button"] {
+    transition: none;
+    font-size: 12px;
+    top: 40px;
+    height: 40%;
+    width: 50%;
+  }
+  textarea {
+    height: 50%;
   }
 }
