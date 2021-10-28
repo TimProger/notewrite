@@ -438,22 +438,22 @@ h2 {
     width: 10px;
   }
   input[type="text"] {
-    height: 20%;
-    min-height: 20%;
-    max-height: 20%;
+    height: 10%;
+    min-height: 10%;
+    max-height: 10%;
   }
   input[type="button"] {
     transition: none;
     font-size: 12px;
     top: 40px;
-    height: 20%;
-    min-height: 20%;
-    max-height: 20%;
+    height: 10%;
+    min-height: 10%;
+    max-height: 10%;
     width: 50%;
   }
   textarea {
-    height: 20%;
-    min-height: 20%;
-    max-height: 20%;
+    height: 10%;
+    min-height: 10%;
+    max-height: 10%;
   }
 }
